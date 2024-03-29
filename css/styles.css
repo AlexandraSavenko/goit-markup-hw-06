@@ -167,7 +167,9 @@ img {
   margin: 0 auto;
 }
 
-@media screen {
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolition: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-image {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -312,7 +314,7 @@ img {
   /* gap: 32px; */
   border-radius: 0 0 4px 4px;
   /* width: calc((100% - 3 * 24px) / 4); */
-  width: 100%;
+  /* width: 100%; */
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -558,7 +560,6 @@ img {
 .modal {
   width: 408px;
   min-height: 584px;
-  /* background-color: #ffffff; */
   border-radius: 4px;
   position: absolute;
   top: 50%;
@@ -580,8 +581,6 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  /* border-radius: 100%; */
-  /* fill: #e7e9fc; */
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
@@ -768,7 +767,9 @@ img {
       ),
       url(../images/Dark-bg-tab.jpg);
   }
-  @media screen {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolition: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-image {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -818,7 +819,9 @@ img {
       ),
       url(../images/people-office.jpg);
   }
-  @media screen {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolition: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-image {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
