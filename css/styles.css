@@ -92,10 +92,88 @@ img {
 .header-partlogo {
   color: #2e2f42;
 }
-
-.header-menu-list {
-  /* margin-right: 332px; */
+.header-menu-open-btn {
+  border: none;
+  background: transparent;
+}
+.header-menu-open-icon {
+  height: 24px;
+  width: 24px;
+  fill: #2f2f37;
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  padding: 24px 24px 40px 16px;
+}
+.mob-menu-close-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: #2e2f42;
+  display: block;
+  margin-left: auto;
+}
+.mob-menu-close-icon {
+  width: 8px;
+  height: 8px;
+}
+.mob-menu-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 50px;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-item:focus {
+  color: #404bbf;
+}
+.mob-menu-link {
+}
+.current {
+}
+.mob-contacts {
   display: flex;
+  gap: 40px;
+}
+.mob-contacts-list {
+}
+.mob-contacts-item {
+}
+.mob-contacts-link {
+  width: 40px;
+  height: 40px;
+  fill: #f4f4fd;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-contact-link:hover,
+.mob-contact-link:focus {
+  /* background-color: #31d0aa; */
+  background-color: #404bbf;
+}
+.mob-cont-box-item {
+}
+.mob-contact-link {
+}
+.mob-contacts-link-icon {
+}
+.header-menu-list {
+  /* display: flex; */
+  display: none;
   gap: 40px;
 }
 
@@ -134,7 +212,8 @@ img {
   font-style: normal;
 }
 .header-contacts-list {
-  display: flex;
+  /* display: flex; */
+  display: none;
   gap: 40px;
 }
 .header-contacts-link {
@@ -167,7 +246,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
+@media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolition: 192dpi),
   (min-resolution: 2dppx) {
   .hero-image {
@@ -767,7 +846,7 @@ img {
       ),
       url(../images/Dark-bg-tab.jpg);
   }
-  @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolition: 192dpi),
     (min-resolution: 2dppx) {
     .hero-image {
@@ -819,7 +898,7 @@ img {
       ),
       url(../images/people-office.jpg);
   }
-  @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolition: 192dpi),
     (min-resolution: 2dppx) {
     .hero-image {
