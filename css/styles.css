@@ -542,15 +542,17 @@ img {
 .footer {
   background-color: #2e2f42;
   /* padding: 100px 0; */
-  padding: 96px 16px;
   width: 100vw;
   height: 100vh;
 }
 .footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  padding: 0;
+  flex-wrap: wrap;
+  gap: 72px;
+  /* flex-direction: column;
+  align-items: baseline; */
+  padding: 96px 16px;
+  /* padding: 0; */
   /* align-items: baseline; */
 }
 .footer-content-logobox {
@@ -581,6 +583,13 @@ img {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+.footer-content-contactsbox {
+  /* margin-right: 80px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .card-contact-fbox-title {
   font-weight: 500;
   font-size: 16px;
@@ -601,11 +610,10 @@ img {
 /* footer-form */
 .footer-form-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.footer-content-contactsbox {
-  margin-right: 80px;
-}
+
 .subscribe-text {
   font-weight: 500;
   font-size: 16px;
@@ -616,6 +624,8 @@ img {
 }
 .footer-form-wrap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 .footer-email {
@@ -922,6 +932,25 @@ img {
   .section-four-list {
     gap: 72px 24px;
   }
+  .footer {
+    width: 768px;
+    height: auto;
+  }
+  .footer-content {
+    padding: 96px 164px 96px 108px;
+    gap: 0;
+  }
+  .footer-content-logobox {
+    display: block;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+  .footer-content-contactsbox {
+    display: block;
+  }
+  .footer-form-container {
+    justify-content: flex-start;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -997,5 +1026,26 @@ img {
   }
   .section-four-list {
     gap: 48px 24px;
+  }
+  .footer {
+    width: 100%;
+    padding: 100px 0;
+  }
+  .footer-content {
+    display: flex;
+    align-items: baseline;
+    width: 1158px;
+    padding: 0 15px;
+  }
+  .footer-content-logobox {
+    margin-bottom: 0;
+    margin-right: 120px;
+  }
+  .footer-content-contactsbox {
+    margin-right: 80px;
+  }
+  .footer-form-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
