@@ -150,7 +150,6 @@ img {
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
-
 .mob-menu-link {
   color: #2e2f42;
 }
@@ -742,7 +741,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  /* margin-top: 24px; */
   margin-bottom: 16px;
 }
 .modal-form-item {
