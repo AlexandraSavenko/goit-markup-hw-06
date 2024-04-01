@@ -168,6 +168,7 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  z-index: 999;
 }
 .mob-menu-bottom {
   display: flex;
@@ -245,7 +246,7 @@ img {
 /* ======================================================================= */
 .mob-soc-list {
   display: flex;
-  gap: 24px;
+  gap: 40px;
   justify-content: center;
 }
 .mob-soc-item {
@@ -355,7 +356,6 @@ img {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
@@ -473,6 +473,8 @@ img {
 }
 .section-four-list {
   display: flex;
+  /* flex-direction: column;
+  gap: 48px; */
   flex-wrap: wrap;
   row-gap: 48px;
 }
@@ -877,12 +879,12 @@ img {
     padding-left: 16px;
     padding-right: 16px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1157px) {
+  /* @media screen and (min-width: 768px) and (max-width: 1157px) {
     .header {
       padding-top: 24px;
       padding-bottom: 24px;
     }
-  }
+  } */
   .header-menu-open-btn {
     display: none;
     pointer-events: none;
@@ -982,6 +984,10 @@ img {
     width: 1158px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
   .hero-image {
     padding: 188px 0;
