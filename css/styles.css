@@ -213,20 +213,19 @@ img {
 }
 .mob-contacts {
   margin-bottom: 48px;
+  font-style: normal;
 }
-.mob-contacts-email {
+.mob-contacts-item {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #4d5ae5;
   margin-bottom: 24px;
 }
-.mob-contacts-tel {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+.mob-contacts-link-email {
+  color: #4d5ae5;
+}
+.mob-contacts-link-tel {
   color: #434455;
 }
 
